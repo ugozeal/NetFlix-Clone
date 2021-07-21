@@ -23,6 +23,7 @@
 		DC2AA5B726A8590000792ADC /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AA5B626A8590000792ADC /* TopMoviePreview.swift */; };
 		DC2AA5B926A85FC300792ADC /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AA5B826A85FC300792ADC /* SmallVerticalButton.swift */; };
 		DC2AA5BB26A866B900792ADC /* WhitePlayButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AA5BA26A866B900792ADC /* WhitePlayButtonView.swift */; };
+		DCF9604E26A897AB00123EB1 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF9604D26A897AB00123EB1 /* MovieDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		DC2AA5B626A8590000792ADC /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		DC2AA5B826A85FC300792ADC /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 		DC2AA5BA26A866B900792ADC /* WhitePlayButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitePlayButtonView.swift; sourceTree = "<group>"; };
+		DCF9604D26A897AB00123EB1 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,16 +156,49 @@
 		DC2AA5A826A842C100792ADC /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				DC2AA5A626A841FE00792ADC /* HomeView.swift */,
-				DC2AA5B626A8590000792ADC /* TopMoviePreview.swift */,
-				DC2AA5BA26A866B900792ADC /* WhitePlayButtonView.swift */,
-				DC2AA5B826A85FC300792ADC /* SmallVerticalButton.swift */,
-				DC2AA5B426A84DC300792ADC /* HomeVM.swift */,
-				DC2AA5AE26A847EE00792ADC /* Movie.swift */,
-				DC2AA5B026A848E900792ADC /* StandardHomeMovie.swift */,
-				DC2AA5B226A8496100792ADC /* GlobalHelpers.swift */,
+				DCF9604926A8974400123EB1 /* HomeViews */,
+				DCF9604C26A8977900123EB1 /* HelperViews */,
+				DCF9604A26A8975700123EB1 /* Model */,
+				DCF9604B26A8976700123EB1 /* Helpers */,
+				DCF9604D26A897AB00123EB1 /* MovieDetail.swift */,
 			);
 			path = iOS;
+			sourceTree = "<group>";
+		};
+		DCF9604926A8974400123EB1 /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				DC2AA5A626A841FE00792ADC /* HomeView.swift */,
+				DC2AA5B426A84DC300792ADC /* HomeVM.swift */,
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
+		DCF9604A26A8975700123EB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC2AA5AE26A847EE00792ADC /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DCF9604B26A8976700123EB1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DC2AA5B226A8496100792ADC /* GlobalHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DCF9604C26A8977900123EB1 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				DC2AA5B626A8590000792ADC /* TopMoviePreview.swift */,
+				DC2AA5BA26A866B900792ADC /* WhitePlayButtonView.swift */,
+				DC2AA5B026A848E900792ADC /* StandardHomeMovie.swift */,
+				DC2AA5B826A85FC300792ADC /* SmallVerticalButton.swift */,
+			);
+			path = HelperViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +347,7 @@
 				DC2AA5AF26A847EE00792ADC /* Movie.swift in Sources */,
 				DC2AA57526A83FB300792ADC /* netflixcloneApp.swift in Sources */,
 				DC2AA5B926A85FC300792ADC /* SmallVerticalButton.swift in Sources */,
+				DCF9604E26A897AB00123EB1 /* MovieDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
