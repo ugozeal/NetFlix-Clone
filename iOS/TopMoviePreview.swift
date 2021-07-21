@@ -34,9 +34,11 @@ struct TopMoviePreview: View {
                 
                 HStack {
                     ForEach(movie.categories, id: \.self) { category in
+                        
                         HStack {
                             Text(category)
                                 .font(.footnote)
+                            
                             if !isCategoryLast(category) {
                                 Image(systemName: "circle.fill")
                                     .foregroundColor(.blue)
@@ -69,6 +71,10 @@ struct TopMoviePreview: View {
                     Spacer()
                 }
             }
+            .background(
+                LinearGradient.blackOpacityGradient
+            .padding(.top, 250)
+            )
         }
         .foregroundColor(.white)
     }
