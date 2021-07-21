@@ -13,6 +13,7 @@
 		DC2AA57C26A83FB800792ADC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2AA57B26A83FB800792ADC /* Preview Assets.xcassets */; };
 		DC2AA58726A83FB800792ADC /* netflixcloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AA58626A83FB800792ADC /* netflixcloneTests.swift */; };
 		DC2AA59226A83FB800792ADC /* netflixcloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AA59126A83FB800792ADC /* netflixcloneUITests.swift */; };
+		DC2AA5A726A841FE00792ADC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AA5A626A841FE00792ADC /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		DC2AA58D26A83FB800792ADC /* netflixcloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = netflixcloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2AA59126A83FB800792ADC /* netflixcloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = netflixcloneUITests.swift; sourceTree = "<group>"; };
 		DC2AA59326A83FB800792ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC2AA5A626A841FE00792ADC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +77,7 @@
 		DC2AA56826A83FB300792ADC = {
 			isa = PBXGroup;
 			children = (
-				DC2AA57326A83FB300792ADC /* netflixclone */,
+				DC2AA57326A83FB300792ADC /* Shared */,
 				DC2AA58526A83FB800792ADC /* netflixcloneTests */,
 				DC2AA59026A83FB800792ADC /* netflixcloneUITests */,
 				DC2AA57226A83FB300792ADC /* Products */,
@@ -92,16 +94,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC2AA57326A83FB300792ADC /* netflixclone */ = {
+		DC2AA57326A83FB300792ADC /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				DC2AA57426A83FB300792ADC /* netflixcloneApp.swift */,
 				DC2AA57626A83FB300792ADC /* ContentView.swift */,
+				DC2AA5A626A841FE00792ADC /* HomeView.swift */,
 				DC2AA57826A83FB800792ADC /* Assets.xcassets */,
 				DC2AA57D26A83FB800792ADC /* Info.plist */,
 				DC2AA57A26A83FB800792ADC /* Preview Content */,
 			);
-			path = netflixclone;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		DC2AA57A26A83FB800792ADC /* Preview Content */ = {
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC2AA5A726A841FE00792ADC /* HomeView.swift in Sources */,
 				DC2AA57726A83FB300792ADC /* ContentView.swift in Sources */,
 				DC2AA57526A83FB300792ADC /* netflixcloneApp.swift in Sources */,
 			);
