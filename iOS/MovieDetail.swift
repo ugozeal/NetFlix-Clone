@@ -9,9 +9,7 @@ import SwiftUI
 
 struct MovieDetail: View {
     var movie: Movie
-    let screen = UIScreen.main.bounds
-    
-    
+    let screen = UIScreen.main.bounds    
     
     var body: some View {
         ZStack {
