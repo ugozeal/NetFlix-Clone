@@ -78,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				DC2AA57326A83FB300792ADC /* Shared */,
+				DC2AA5A826A842C100792ADC /* iOS */,
 				DC2AA58526A83FB800792ADC /* netflixcloneTests */,
 				DC2AA59026A83FB800792ADC /* netflixcloneUITests */,
 				DC2AA57226A83FB300792ADC /* Products */,
@@ -99,9 +100,7 @@
 			children = (
 				DC2AA57426A83FB300792ADC /* netflixcloneApp.swift */,
 				DC2AA57626A83FB300792ADC /* ContentView.swift */,
-				DC2AA5A626A841FE00792ADC /* HomeView.swift */,
 				DC2AA57826A83FB800792ADC /* Assets.xcassets */,
-				DC2AA57D26A83FB800792ADC /* Info.plist */,
 				DC2AA57A26A83FB800792ADC /* Preview Content */,
 			);
 			path = Shared;
@@ -131,6 +130,15 @@
 				DC2AA59326A83FB800792ADC /* Info.plist */,
 			);
 			path = netflixcloneUITests;
+			sourceTree = "<group>";
+		};
+		DC2AA5A826A842C100792ADC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DC2AA5A626A841FE00792ADC /* HomeView.swift */,
+				DC2AA57D26A83FB800792ADC /* Info.plist */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
