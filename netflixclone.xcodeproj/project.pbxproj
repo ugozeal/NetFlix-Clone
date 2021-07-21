@@ -21,6 +21,7 @@
 		DC2AA5B326A8496100792ADC /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AA5B226A8496100792ADC /* GlobalHelpers.swift */; };
 		DC2AA5B526A84DC300792ADC /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AA5B426A84DC300792ADC /* HomeVM.swift */; };
 		DC2AA5B726A8590000792ADC /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AA5B626A8590000792ADC /* TopMoviePreview.swift */; };
+		DC2AA5B926A85FC300792ADC /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AA5B826A85FC300792ADC /* SmallVerticalButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		DC2AA5B226A8496100792ADC /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		DC2AA5B426A84DC300792ADC /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		DC2AA5B626A8590000792ADC /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
+		DC2AA5B826A85FC300792ADC /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			children = (
 				DC2AA5A626A841FE00792ADC /* HomeView.swift */,
 				DC2AA5B626A8590000792ADC /* TopMoviePreview.swift */,
+				DC2AA5B826A85FC300792ADC /* SmallVerticalButton.swift */,
 				DC2AA5B426A84DC300792ADC /* HomeVM.swift */,
 				DC2AA5AE26A847EE00792ADC /* Movie.swift */,
 				DC2AA5B026A848E900792ADC /* StandardHomeMovie.swift */,
@@ -304,6 +307,7 @@
 				DC2AA5B726A8590000792ADC /* TopMoviePreview.swift in Sources */,
 				DC2AA5AF26A847EE00792ADC /* Movie.swift in Sources */,
 				DC2AA57526A83FB300792ADC /* netflixcloneApp.swift in Sources */,
+				DC2AA5B926A85FC300792ADC /* SmallVerticalButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
