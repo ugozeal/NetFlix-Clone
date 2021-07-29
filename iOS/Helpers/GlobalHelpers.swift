@@ -17,7 +17,8 @@ let exampleMovie1 = Movie(
     numberOfSeasons: 1,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
-    cast: "Ben Kay, Jessie Kahn, Danny Ben"
+    cast: "Ben Kay, Jessie Kahn, Danny Ben",
+    moreLikrThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7]
 )
 let exampleMovie2 = Movie(
     id: UUID().uuidString,
@@ -28,7 +29,8 @@ let exampleMovie2 = Movie(
     numberOfSeasons: 2,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
-    cast: "Ben Kay, Jessie Kahn, Danny Ben")
+    cast: "Ben Kay, Jessie Kahn, Danny Ben",
+    moreLikrThisMovies: [])
 let exampleMovie3 = Movie(
     id: UUID().uuidString,
     name: "Community",
@@ -38,7 +40,8 @@ let exampleMovie3 = Movie(
     numberOfSeasons: 3,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
-    cast: "Ben Kay, Jessie Kahn, Danny Ben")
+    cast: "Ben Kay, Jessie Kahn, Danny Ben",
+    moreLikrThisMovies: [])
 let exampleMovie4 = Movie(
     id: UUID().uuidString,
     name: "Alone",
@@ -48,7 +51,8 @@ let exampleMovie4 = Movie(
     numberOfSeasons: 4,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
-    cast: "Ben Kay, Jessie Kahn, Danny Ben")
+    cast: "Ben Kay, Jessie Kahn, Danny Ben",
+    moreLikrThisMovies: [])
 let exampleMovie5 = Movie(
     id: UUID().uuidString,
     name: "Hannibal",
@@ -59,6 +63,7 @@ let exampleMovie5 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
     cast: "Ben Kay, Jessie Kahn, Danny Ben",
+    moreLikrThisMovies: [],
     promotionHeadline: "New Episodes Coming Soon")
 let exampleMovie6 = Movie(
     id: UUID().uuidString,
@@ -71,9 +76,25 @@ let exampleMovie6 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
     cast: "Ben Kay, Jessie Kahn, Danny Ben",
+    moreLikrThisMovies: [],
+    promotionHeadline: "Watch Season 6 Now")
+let exampleMovie7 = Movie(
+    id: UUID().uuidString,
+    name: "After Life",
+    thumbnail: URL(string: "https://picsum.photos/200/305")!,
+    categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
+    year: 2020,
+    rating: "TV-MA",
+    numberOfSeasons: 6,
+    defaultEpisodeInfo: exampleEpisodeInfo1,
+    creators: "David Okonkwo",
+    cast: "Ben Kay, Jessie Kahn, Danny Ben",
+    moreLikrThisMovies: [],
     promotionHeadline: "Watch Season 6 Now")
 
-let exampleMovies: [Movie] = [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6]
+var exampleMovies: [Movie] {
+    [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7].shuffled()
+}
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(
     episodeName: "Beginning and the End",
     description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
