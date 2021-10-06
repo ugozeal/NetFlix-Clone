@@ -17,7 +17,7 @@ struct EpisodeView: View {
     }
     
     var body: some View {
-        VStack {
+        VStack(spacing: 14) {
             // Seasons picker
             HStack {
                 Button(action: {
@@ -35,11 +35,43 @@ struct EpisodeView: View {
             
             // episode list
             ForEach(getEpisodes(forSeason: selectedSeason)) { episode in
-                Text("Text")
+                VStack(alignment: .leading) {
+                    // HStack
+                    HStack {
+                        VideoPreviewImage(imageURL: episode.thumbnailURL, videoURL: episode.videoURL)
+                            .frame(width: 120, height: 70)
+                            .clipped()
+                        
+                        VStack(alignment: .leading) {
+                            Text("\(episode.episodeNumber). \(episode.name)")
+                                .font(.system(size: 16))
+                            Text("\(episode.length)m")
+                                .font(.system(size: 12))
+                                .foregroundColor(.gray)
+                        }
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            // action
+                            
+                        }, label: {
+                            Image(systemName: "arrow.down.to.line.alt")
+                                .font(.system(size: 20))
+                        })
+                    }
+                    
+                    //Description
+                    Text(episode.description)
+                        .font(.system(size: 13))
+                        .lineLimit(3)
+                }
+                .padding(.bottom, 20)
             }
             Spacer()
         }
         .foregroundColor(.white)
+        .padding(.horizontal, 20)
     }
 }
 
