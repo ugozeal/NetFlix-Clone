@@ -24,6 +24,7 @@
 		DC2AA5B926A85FC300792ADC /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AA5B826A85FC300792ADC /* SmallVerticalButton.swift */; };
 		DC2AA5BB26A866B900792ADC /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2AA5BA26A866B900792ADC /* PlayButton.swift */; };
 		DC8A960926A9CE3100713D14 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8A960826A9CE3100713D14 /* CustomTabSwitcher.swift */; };
+		DCCEAE7A270D8D0F00D48806 /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEAE79270D8D0F00D48806 /* TrailerList.swift */; };
 		DCD3C49A26B2E3DF00E7B6F0 /* MoreLikeThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3C49926B2E3DF00E7B6F0 /* MoreLikeThis.swift */; };
 		DCD3C49C26B2FCCA00E7B6F0 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3C49B26B2FCCA00E7B6F0 /* Trailer.swift */; };
 		DCD3C49E26B2FEF800E7B6F0 /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3C49D26B2FEF800E7B6F0 /* SwiftUIVideoView.swift */; };
@@ -71,6 +72,7 @@
 		DC2AA5B826A85FC300792ADC /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 		DC2AA5BA26A866B900792ADC /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		DC8A960826A9CE3100713D14 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
+		DCCEAE79270D8D0F00D48806 /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
 		DCD3C49926B2E3DF00E7B6F0 /* MoreLikeThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLikeThis.swift; sourceTree = "<group>"; };
 		DCD3C49B26B2FCCA00E7B6F0 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 		DCD3C49D26B2FEF800E7B6F0 /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				DCF9604D26A897AB00123EB1 /* MovieDetail.swift */,
 				DC8A960826A9CE3100713D14 /* CustomTabSwitcher.swift */,
 				DCD3C49926B2E3DF00E7B6F0 /* MoreLikeThis.swift */,
+				DCCEAE79270D8D0F00D48806 /* TrailerList.swift */,
 			);
 			path = MovieDetails;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				DC2AA5AF26A847EE00792ADC /* Movie.swift in Sources */,
 				DCD3C49A26B2E3DF00E7B6F0 /* MoreLikeThis.swift in Sources */,
 				DC8A960926A9CE3100713D14 /* CustomTabSwitcher.swift in Sources */,
+				DCCEAE7A270D8D0F00D48806 /* TrailerList.swift in Sources */,
 				DC2AA57526A83FB300792ADC /* netflixcloneApp.swift in Sources */,
 				DC2AA5B926A85FC300792ADC /* SmallVerticalButton.swift in Sources */,
 				DCD3C49E26B2FEF800E7B6F0 /* SwiftUIVideoView.swift in Sources */,

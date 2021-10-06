@@ -10,6 +10,20 @@ import SwiftUI
 
 
 let exampleVideoURL = URL(string: "https://www.radiantmediaplayer.com/media/big-buck-bunny-360p.mp4")!
+let exampleImageURL = URL(string: "https://picsum.photos/300/104")!
+let exampleImageURL1 = URL(string: "https://picsum.photos/300/105")!
+let exampleImageURL2 = URL(string: "https://picsum.photos/300/106")!
+let exampleImageURL3 = URL(string: "https://picsum.photos/300/107")!
+let exampleImageURL4 = URL(string: "https://picsum.photos/300/108")!
+var randomExampleImageURl: URL {
+    return [exampleImageURL, exampleImageURL1, exampleImageURL2, exampleImageURL3, exampleImageURL4].randomElement() ?? exampleImageURL
+}
+let exampleTrailer = Trailer(name: "Season 3 Trailer", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURl)
+let exampleTrailer1 = Trailer(name: "The Heroes Journey", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURl)
+let exampleTrailer2 = Trailer(name: "Squid Game", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURl)
+let exampleTrailer3 = Trailer(name: "The Avengers", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURl)
+let exampleTrailer4 = Trailer(name: "The Last Dance", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURl)
+let exampleTrailers = [exampleTrailer, exampleTrailer2, exampleTrailer1, exampleTrailer3, exampleTrailer4]
 
 let exampleMovie1 = Movie(
     id: UUID().uuidString,
@@ -21,8 +35,10 @@ let exampleMovie1 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
     cast: "Ben Kay, Jessie Kahn, Danny Ben",
-    moreLikrThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7]
+    moreLikrThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7],
+    trailers: exampleTrailers
 )
+
 let exampleMovie2 = Movie(
     id: UUID().uuidString,
     name: "Travelers",
@@ -33,7 +49,10 @@ let exampleMovie2 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
     cast: "Ben Kay, Jessie Kahn, Danny Ben",
-    moreLikrThisMovies: [])
+    moreLikrThisMovies: [],
+    trailers: exampleTrailers
+)
+
 let exampleMovie3 = Movie(
     id: UUID().uuidString,
     name: "Community",
@@ -44,7 +63,10 @@ let exampleMovie3 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
     cast: "Ben Kay, Jessie Kahn, Danny Ben",
-    moreLikrThisMovies: [])
+    moreLikrThisMovies: [],
+    trailers: exampleTrailers
+)
+
 let exampleMovie4 = Movie(
     id: UUID().uuidString,
     name: "Alone",
@@ -55,7 +77,10 @@ let exampleMovie4 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
     cast: "Ben Kay, Jessie Kahn, Danny Ben",
-    moreLikrThisMovies: [])
+    moreLikrThisMovies: [],
+    trailers: exampleTrailers
+)
+
 let exampleMovie5 = Movie(
     id: UUID().uuidString,
     name: "Hannibal",
@@ -67,7 +92,10 @@ let exampleMovie5 = Movie(
     creators: "David Okonkwo",
     cast: "Ben Kay, Jessie Kahn, Danny Ben",
     moreLikrThisMovies: [],
-    promotionHeadline: "New Episodes Coming Soon")
+    promotionHeadline: "New Episodes Coming Soon",
+    trailers: exampleTrailers
+)
+
 let exampleMovie6 = Movie(
     id: UUID().uuidString,
     name: "After Life",
@@ -80,7 +108,10 @@ let exampleMovie6 = Movie(
     creators: "David Okonkwo",
     cast: "Ben Kay, Jessie Kahn, Danny Ben",
     moreLikrThisMovies: [],
-    promotionHeadline: "Watch Season 6 Now")
+    promotionHeadline: "Watch Season 6 Now",
+    trailers: exampleTrailers
+)
+
 let exampleMovie7 = Movie(
     id: UUID().uuidString,
     name: "After Life",
@@ -93,7 +124,9 @@ let exampleMovie7 = Movie(
     creators: "David Okonkwo",
     cast: "Ben Kay, Jessie Kahn, Danny Ben",
     moreLikrThisMovies: [],
-    promotionHeadline: "Watch Season 6 Now")
+    promotionHeadline: "Watch Season 6 Now",
+    trailers: exampleTrailers
+)
 
 var exampleMovies: [Movie] {
     [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7].shuffled()
