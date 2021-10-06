@@ -77,11 +77,12 @@ let exampleMovie1 = Movie(
     thumbnail: URL(string: "https://picsum.photos/200/300")!,
     categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
     year: 2020, rating: "TV-MA",
-    numberOfSeasons: 1,
+    numberOfSeasons: 2,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
     cast: "Ben Kay, Jessie Kahn, Danny Ben",
-    moreLikrThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7],
+    moreLikeThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7],
+    episodes: allExampleEpisodes,
     trailers: exampleTrailers
 )
 
@@ -95,7 +96,7 @@ let exampleMovie2 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
     cast: "Ben Kay, Jessie Kahn, Danny Ben",
-    moreLikrThisMovies: [],
+    moreLikeThisMovies: [],
     trailers: exampleTrailers
 )
 
@@ -109,7 +110,7 @@ let exampleMovie3 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
     cast: "Ben Kay, Jessie Kahn, Danny Ben",
-    moreLikrThisMovies: [],
+    moreLikeThisMovies: [],
     trailers: exampleTrailers
 )
 
@@ -123,7 +124,7 @@ let exampleMovie4 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
     cast: "Ben Kay, Jessie Kahn, Danny Ben",
-    moreLikrThisMovies: [],
+    moreLikeThisMovies: [],
     trailers: exampleTrailers
 )
 
@@ -137,7 +138,7 @@ let exampleMovie5 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
     cast: "Ben Kay, Jessie Kahn, Danny Ben",
-    moreLikrThisMovies: [],
+    moreLikeThisMovies: [],
     promotionHeadline: "New Episodes Coming Soon",
     trailers: exampleTrailers
 )
@@ -153,7 +154,7 @@ let exampleMovie6 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
     cast: "Ben Kay, Jessie Kahn, Danny Ben",
-    moreLikrThisMovies: [],
+    moreLikeThisMovies: [],
     promotionHeadline: "Watch Season 6 Now",
     trailers: exampleTrailers
 )
@@ -169,7 +170,7 @@ let exampleMovie7 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "David Okonkwo",
     cast: "Ben Kay, Jessie Kahn, Danny Ben",
-    moreLikrThisMovies: [],
+    moreLikeThisMovies: [],
     promotionHeadline: "Watch Season 6 Now",
     trailers: exampleTrailers
 )
