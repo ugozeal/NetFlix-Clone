@@ -8,6 +8,9 @@
 import Foundation
 import SwiftUI
 
+
+let exampleVideoURL = URL(string: "https://www.radiantmediaplayer.com/media/big-buck-bunny-360p.mp4")!
+
 let exampleMovie1 = Movie(
     id: UUID().uuidString,
     name: "DARK",
