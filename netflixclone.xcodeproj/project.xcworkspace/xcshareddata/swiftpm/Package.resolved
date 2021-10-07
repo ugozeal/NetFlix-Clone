@@ -2,12 +2,30 @@
   "object": {
     "pins": [
       {
+        "package": "GSPlayer",
+        "repositoryURL": "https://github.com/wxxsw/GSPlayer.git",
+        "state": {
+          "branch": null,
+          "revision": "5904551cf33e0c38831fdc56c6a2c9770eadc30d",
+          "version": "0.2.25"
+        }
+      },
+      {
         "package": "Kingfisher",
         "repositoryURL": "https://github.com/onevcat/Kingfisher",
         "state": {
           "branch": null,
           "revision": "fd6aee6d3774db191b22e331cc88f00041a2ca85",
           "version": "5.14.1"
+        }
+      },
+      {
+        "package": "VideoPlayer",
+        "repositoryURL": "https://github.com/Raees678/VideoPlayer.git",
+        "state": {
+          "branch": null,
+          "revision": "eb9cd99151e1e30ced19f87f4dbbc3c53e2f2e9c",
+          "version": "2.0.1"
         }
       }
     ]

@@ -24,7 +24,7 @@ struct TopMoviePreview: View {
     
     var body: some View {
         ZStack {
-            KFImage(movie.thumbnail)
+            KFImage(movie.thumbnailURL)
                 .resizable()
                 .scaledToFill()
                 .clipped()
@@ -70,6 +70,7 @@ struct TopMoviePreview: View {
                     
                     Spacer()
                 }
+                .padding(.vertical, 14)
             }
             .background(
                 LinearGradient.blackOpacityGradient

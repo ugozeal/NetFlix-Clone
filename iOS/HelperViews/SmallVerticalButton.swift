@@ -23,11 +23,6 @@ struct SmallVerticalButton: View {
         }
     }
     
-    
-    
-    
-    
-    
     var action: () -> Void
     
     //MARK: Body
